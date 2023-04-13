@@ -1,0 +1,10 @@
+
+a = input("Please input x-initial :")
+b = input("Please input y-initial:")
+
+
+def eulers_function(a,b):
+  output = a + b**2
+return output
+
+print("Aal izz well!")

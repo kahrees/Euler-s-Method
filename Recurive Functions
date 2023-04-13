@@ -1,0 +1,21 @@
+
+import math
+
+x_0 = int(input("Please input x-initial :"))
+y_0 = int(input("Please input y-initial:"))
+h = int(input("Please input step-size:"))
+
+def test(x_0, y_0, h):
+    y_0 = x_0 + y_0
+    if x_0 <= 5:
+     return y_0
+    x_0 += h
+    test(x_0, y_0, h)   
+print(y_0)
+
+    
+    
+
+
+
+ 
