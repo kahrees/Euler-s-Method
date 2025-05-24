@@ -1,8 +1,13 @@
+# %%
+print('Remember to change function and end-case')
+print('Ignore the second x')
+
+# %%
 import math
 
-x = int(input("Please input x-initial :"))
-y = int(input("Please input y-initial:"))
-#h = int(input("Please input step-size:"))
+x = float(input("Please input x-initial :"))
+y = float(input("Please input y-initial:"))
+h = float(input("Please input step-size:"))
 
 l = math.pi
 
@@ -10,11 +15,13 @@ l = math.pi
 
 #def RecursiveEulerTest(x, y, h):
 def funct(x, y):
-    h = 0.1
-    y_of_x = (-2 * y) + x**3 * math.exp(-2 * x)
+    #h = 0.1
+    y_of_x = x*math.sqrt(y)
     yn = y + h * (y_of_x)
-    print(yn)
-    if x >= 0.2:
+    print(x)
+    print(y) 
+    print('\n')
+    if x >= 1.5:
         return
     else:
         return funct(x + h, yn)
@@ -25,3 +32,4 @@ funct(x, y)
         
 
        
+# %%
